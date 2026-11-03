@@ -1,16 +1,22 @@
 ---
 name: pbr-material-render-review
-description: Diagnose flat or unrealistic Blender PBR materials by checking assigned faces, image connectivity, UV bases, normal maps and packed assets before reviewing the actual rendered appearance.
+description: Diagnosticar texturas, UV, normales y empaquetado antes de repetir un render. En IAbot.io, asígnala a un empleado de revisión de materiales y aporta el BLEND y la imagen que muestra el defecto.
 license: MIT
 metadata:
   author: IAbot.io
-  version: "0.1.0"
+  version: 0.1.0
+  sector: Arquitectura y BIM
 ---
 
 # Diagnóstico de materiales PBR
 
-Necesita Blender y acceso a la escena que produjo el resultado. Compara el BLEND
-de entrada con el devuelto por el render cuando existan ambos; conserva originales.
+## Uso en IAbot.io
+
+Asigna esta skill a **un empleado de revisión de materiales** desde la biblioteca Skills de [IAbot.io](https://iabot.io). Aporta el BLEND y la imagen que muestra el defecto.
+
+**Ejemplo de encargo:** «Averigua por qué el tapizado se ve liso; entrega las incidencias y una corrección comprobada.»
+
+**Resultado a revisar:** Informe estructural, diagnóstico visual y revisión corregida cuando esté autorizada.
 
 ## Inventario estructural
 

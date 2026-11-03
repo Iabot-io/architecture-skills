@@ -1,17 +1,22 @@
 ---
 name: architectural-quantity-takeoff
-description: Produce traceable architectural quantity takeoffs from drawings or models, with explicit units, geometric formulas, opening deductions, revisions and reconciled totals by work item.
+description: Obtener mediciones por partida con unidades, fórmulas y descuentos documentados. En IAbot.io, asígnala a un empleado de mediciones y presupuestos y aporta los planos o modelos, partidas y criterios de medición.
 license: MIT
 metadata:
   author: IAbot.io
-  version: "0.1.0"
+  version: 0.1.0
+  sector: Arquitectura y BIM
 ---
 
 # Mediciones de arquitectura trazables
 
-Úsala para obtener o revisar cantidades de obra. Necesita acceso a planos o modelos
-y una herramienta de cálculo o tabla. Un presupuesto requiere además precios y
-criterios económicos aportados o verificados para ese encargo.
+## Uso en IAbot.io
+
+Asigna esta skill a **un empleado de mediciones y presupuestos** desde la biblioteca Skills de [IAbot.io](https://iabot.io). Aporta los planos o modelos, partidas y criterios de medición.
+
+**Ejemplo de encargo:** «Mide los paramentos por planta, separa huecos y conserva la fórmula de cada cantidad.»
+
+**Resultado a revisar:** Tabla editable de mediciones, subtotales y exclusiones.
 
 ## Definir la base
 

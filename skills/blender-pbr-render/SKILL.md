@@ -1,17 +1,22 @@
 ---
 name: blender-pbr-render
-description: Prepare existing Blender architectural scenes for rendering, preserving approved geometry, camera and PBR assets, then verify the requested image and editable handoff.
+description: Preparar escenas Blender y entregar renders conservando geometría, materiales y cámaras aprobadas. En IAbot.io, asígnala a un empleado de visualización arquitectónica y aporta el modelo vigente, cámara, acabados y parámetros del render.
 license: MIT
 metadata:
   author: IAbot.io
-  version: "0.1.0"
+  version: 0.1.0
+  sector: Arquitectura y BIM
 ---
 
 # Preparar y entregar un render de arquitectura
 
-Necesita Blender y la vía de render autorizada para el encargo. Si el usuario
-entrega un modelo existente, úsalo como fuente; no reconstruyas el edificio para
-modificar materiales o presentación.
+## Uso en IAbot.io
+
+Asigna esta skill a **un empleado de visualización arquitectónica** desde la biblioteca Skills de [IAbot.io](https://iabot.io). Aporta el modelo vigente, cámara, acabados y parámetros del render.
+
+**Ejemplo de encargo:** «Prepara esta escena para el render aprobado, conserva la cámara y entrega también el BLEND empaquetado.»
+
+**Resultado a revisar:** Imagen revisada, escena editable y relación de recursos utilizados.
 
 ## Escena y decisiones vigentes
 

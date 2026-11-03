@@ -1,71 +1,55 @@
-# Architecture skills · IAbot.io
+# Arquitectura y BIM · Skills para empleados IA de IAbot.io
 
-**Habilidades abiertas para agentes de IA que preparan planos, modelos 3D,
-renders y documentación de arquitectura.**
+Planos, modelos, memorias y mediciones de arquitectura con referencias a la revisión del proyecto.
 
-Publicadas por [IAbot.io](https://iabot.io), plataforma de empleados de inteligencia
-artificial. Cada habilidad define un trabajo concreto, sus evidencias y su entrega.
-Usan el formato abierto [Agent Skills](https://agentskills.io/specification).
+Procedimientos abiertos y concretos para agentes IA, con entradas, criterios de revisión y entregables. Publicados por [IAbot.io](https://iabot.io), plataforma de empleados IA con memoria, aplicaciones y ordenador virtual Linux.
 
-## Habilidades
+## Habilidades y uso
 
-| Skill | Trabajo y entregable |
-| --- | --- |
-| [architectural-plan-to-3d](skills/architectural-plan-to-3d/SKILL.md) | Convertir un plano acotado en geometría comprobada y exportar un modelo 3D con sus supuestos documentados. |
-| [blender-pbr-render](skills/blender-pbr-render/SKILL.md) | Preparar cámara, materiales y recursos de una escena Blender; entregar el render solicitado y su editable. |
-| [pbr-material-render-review](skills/pbr-material-render-review/SKILL.md) | Diagnosticar texturas, UV y normales; generar un informe estructural y revisar el aspecto real. |
-| [architectural-report-writing](skills/architectural-report-writing/SKILL.md) | Redactar una memoria con datos trazables, anexos y pendientes explícitos. |
-| [architectural-quantity-takeoff](skills/architectural-quantity-takeoff/SKILL.md) | Preparar mediciones por partida, planta y fuente, con unidades y reglas de descuento declaradas. |
+| Skill | Empleado en IAbot.io | Entrega que revisar |
+| --- | --- | --- |
+| [Del plano acotado al modelo 3D](skills/architectural-plan-to-3d/SKILL.md) | un empleado de delineación y modelado | Modelo solicitado, editable, cotas de control y supuestos pendientes. |
+| [Preparar y entregar renders Blender](skills/blender-pbr-render/SKILL.md) | un empleado de visualización arquitectónica | Imagen revisada, escena editable y relación de recursos utilizados. |
+| [Diagnosticar materiales PBR](skills/pbr-material-render-review/SKILL.md) | un empleado de revisión de materiales | Informe estructural, diagnóstico visual y revisión corregida cuando esté autorizada. |
+| [Redactar memorias de arquitectura](skills/architectural-report-writing/SKILL.md) | un empleado de documentación arquitectónica | Memoria editable, fuentes, anexos y lista de pendientes. |
+| [Mediciones de obra trazables](skills/architectural-quantity-takeoff/SKILL.md) | un empleado de mediciones y presupuestos | Tabla editable de mediciones, subtotales y exclusiones. |
+| [Coordinar planos, memoria y mediciones](skills/architectural-document-coordination/SKILL.md) | un empleado de coordinación documental de proyectos | Matriz de discrepancias con documentos afectados, impacto y decisión necesaria. |
 
-## Instalación
+## Instalación y uso en IAbot.io
 
 ```sh
-# Explorar sin instalar
-npx skills add iabot-io/architecture-skills --list
-
-# Elegir habilidades y agente de destino
-npx skills add iabot-io/architecture-skills
-
-# Instalar una habilidad concreta
-npx skills add iabot-io/architecture-skills --skill architectural-report-writing
+npx skills add Iabot-io/architecture-skills --list
+npx skills add Iabot-io/architecture-skills
 ```
 
-El CLI y [skills.sh](https://skills.sh) son proyectos externos. Las instalaciones
-con telemetría habilitada contribuyen al descubrimiento según sus reglas;
-publicar una colección no garantiza posición ni plazo de indexación.
+En la plataforma, abre **Skills**, revisa la habilidad e impórtala con el ámbito adecuado. Adjunta sus entradas y da el encargo al empleado. Consulta [la guía de uso en IAbot.io](USO-EN-IABOT.md) para el recorrido completo.
 
-## Uso
+## Ejemplos
 
-Ejemplos de encargos:
+- **Del plano acotado al modelo 3D:** «Convierte el plano adjunto en GLB conservando las cotas y huecos; identifica primero las alturas que faltan.»
+- **Preparar y entregar renders Blender:** «Prepara esta escena para el render aprobado, conserva la cámara y entrega también el BLEND empaquetado.»
+- **Diagnosticar materiales PBR:** «Averigua por qué el tapizado se ve liso; entrega las incidencias y una corrección comprobada.»
 
-- «Convierte este plano acotado en GLB. Conserva huecos y unidades; enumera las
-  cotas que faltan antes de modelar lo que dependa de ellas».
-- «Revisa por qué la tela se ve lisa en este BLEND y este render. Conserva la
-  cámara y la geometría aprobadas».
-- «Prepara la memoria descriptiva de esta reforma con estos documentos. Marca
-  los datos ausentes y referencia de dónde sale cada superficie».
+## Herramientas y límites
 
-Las skills de documentación funcionan con las herramientas habituales de archivos
-del agente. Las de 3D necesitan las aplicaciones indicadas en su `SKILL.md`.
-Instalar instrucciones no instala Blender ni concede acceso a una GPU. Los scripts
-se ejecutan solo cuando el trabajo los requiere. Los criterios normativos se
-comprueban con fuentes vigentes de la jurisdicción del proyecto.
+Necesita un visor de planos y herramientas de documentos; los trabajos 3D requieren CAD o Blender disponibles en el ordenador del empleado.
 
-## Validación y aportaciones
+La colección no instala aplicaciones ni concede accesos. Las referencias se comprueban según la fecha, jurisdicción y alcance del encargo. Los resultados profesionales o administrativos conservan sus responsables y revisiones.
+
+## Fuentes de referencia
+
+- [Código Técnico de la Edificación](https://www.codigotecnico.org/)
+- [Manual de Blender](https://docs.blender.org/manual/en/latest/)
+
+Las fuentes orientan el método; su enlace no significa que una institución certifique o avale estas skills.
+
+## Comprobación y licencia
 
 ```sh
 python3 -m pip install -r scripts/requirements-validation.txt
 python3 scripts/validate_skills.py
 ```
 
-Para proponer una mejora, aporta un caso anonimizado, el resultado esperado y
-la comprobación que permite revisarlo. Conserva las fuentes de recursos ajenos y
-sus licencias. Los ejemplos deben distinguir medidas conocidas de estimaciones.
+Se comprueban formato, recursos y referencias locales. Esa validación no acredita por sí sola un recorrido con un empleado real ni resultados en datos de producción. [Licencia MIT](LICENSE).
 
-## English
-
-Open architecture skills for AI agents: dimensioned plans to 3D, Blender scene
-preparation, PBR material review, technical reports and traceable quantity takeoff.
-Instructions are in Spanish; skill names and descriptions support discovery in
-English. Follow the user's language for deliverables. Published under the
-[MIT license](LICENSE) by [IAbot.io](https://iabot.io).
+Agent Skills for AI employees and agents. Each skill includes an IAbot.io usage example and remains usable in compatible agents outside the platform.

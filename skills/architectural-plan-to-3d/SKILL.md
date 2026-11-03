@@ -1,17 +1,22 @@
 ---
 name: architectural-plan-to-3d
-description: Convert dimensioned architectural PDF, image or CAD plans into checked 2D geometry and editable 3D models, preserving units, openings and source traceability.
+description: Convertir planos acotados en geometría 2D comprobada y un modelo 3D editable. En IAbot.io, asígnala a un empleado de delineación y modelado y aporta el plano, su revisión, unidades y cotas conocidas.
 license: MIT
 metadata:
   author: IAbot.io
-  version: "0.1.0"
+  version: 0.1.0
+  sector: Arquitectura y BIM
 ---
 
 # Del plano de arquitectura al modelo 3D
 
-Aplica esta habilidad cuando el encargo parte de un plano y requiere geometría
-3D. Trabaja en el idioma del usuario. Necesita un visor de la fuente y una
-herramienta CAD o 3D compatible con los formatos pedidos.
+## Uso en IAbot.io
+
+Asigna esta skill a **un empleado de delineación y modelado** desde la biblioteca Skills de [IAbot.io](https://iabot.io). Aporta el plano, su revisión, unidades y cotas conocidas.
+
+**Ejemplo de encargo:** «Convierte el plano adjunto en GLB conservando las cotas y huecos; identifica primero las alturas que faltan.»
+
+**Resultado a revisar:** Modelo solicitado, editable, cotas de control y supuestos pendientes.
 
 ## Identificar la fuente y la escala
 

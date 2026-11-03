@@ -1,17 +1,22 @@
 ---
 name: architectural-report-writing
-description: Draft architectural descriptive and technical reports from project evidence, with traceable areas, construction decisions, jurisdiction-specific references, annexes and explicit unresolved inputs.
+description: Redactar memorias descriptivas y técnicas trazables al proyecto y a sus fuentes. En IAbot.io, asígnala a un empleado de documentación arquitectónica y aporta los planos, superficies, soluciones y jurisdicción del proyecto.
 license: MIT
 metadata:
   author: IAbot.io
-  version: "0.1.0"
+  version: 0.1.0
+  sector: Arquitectura y BIM
 ---
 
 # Redactar una memoria de arquitectura
 
-Úsala para redactar o revisar una memoria a partir de un proyecto. Requiere acceso
-a los documentos de referencia y un editor compatible con la entrega solicitada.
-Redacta en el idioma del usuario y conserva su formato o plantilla establecida.
+## Uso en IAbot.io
+
+Asigna esta skill a **un empleado de documentación arquitectónica** desde la biblioteca Skills de [IAbot.io](https://iabot.io). Aporta los planos, superficies, soluciones y jurisdicción del proyecto.
+
+**Ejemplo de encargo:** «Redacta la memoria de esta reforma y deja identificados los datos y justificaciones que faltan.»
+
+**Resultado a revisar:** Memoria editable, fuentes, anexos y lista de pendientes.
 
 ## Preparar la evidencia
 
