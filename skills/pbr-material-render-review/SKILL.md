@@ -20,7 +20,10 @@ Asigna esta skill a **un empleado de revisión de materiales** desde la bibliote
 
 ## Inventario estructural
 
-Ejecuta el ayudante incluido con las opciones de seguridad de Blender:
+Abre [el ayudante de materiales](scripts/audit_materials.py) desde la revisión
+elegida. Si aún no está instalado, revisa su código y guárdalo como
+`scripts/audit_materials.py` en el ordenador autorizado. Ejecuta desde su carpeta
+superior, con las opciones de seguridad de Blender:
 
 ```sh
 blender --background --disable-autoexec escena.blend --python scripts/audit_materials.py -- --out materiales.json --require-texture Tapizado

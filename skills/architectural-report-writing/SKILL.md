@@ -27,7 +27,8 @@ un pendiente identificable; no completes direcciones, promotores, superficies o
 prestaciones con valores plausibles.
 
 Crea una matriz breve: dato o afirmación, fuente, revisión y ubicación de la
-evidencia. Distingue superficie construida, útil, computable y ámbito medido.
+evidencia. Puedes utilizar el [registro de fuentes](assets/fuentes.csv).
+Distingue superficie construida, útil, computable y ámbito medido.
 Resuelve discrepancias o mantenlas visibles antes de sumar totales.
 
 ## Redactar según el encargo
